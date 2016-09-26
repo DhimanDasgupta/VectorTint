@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.dhimandasgupta.vectortint.ScaleTintActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/activity_scale_tint_red_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RED"
+                style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/activity_scale_tint_green_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GREEN"
+                style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/activity_scale_tint_blue_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BLUE"
+                style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/activity_scale_tint_gray_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GRAY"
+                style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/activity_scale_tint_magenta_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MAGENTA"
+                style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/activity_scale_tint_cyan_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CYAN"
+                style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/activity_scale_tint_black_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BLACK"
+                style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/activity_scale_tint_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="100"
+        android:max="100"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/activity_scale_tint_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/ic_adb"
+        android:layout_gravity="center"/>
+</LinearLayout>

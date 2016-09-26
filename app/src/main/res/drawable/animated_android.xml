@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/android">
+
+    <target
+        android:name="group_head"
+        android:animation="@animator/head_up" />
+
+    <target
+        android:name="group_head"
+        android:animation="@animator/head_down" />
+
+    <target
+        android:name="group_arm"
+        android:animation="@animator/arm_down" />
+
+    <target
+        android:name="group_arm"
+        android:animation="@animator/arm_up" />
+
+    <!--<target
+        android:name="group_body"
+        android:animation="@animator/body_grow" />
+
+    <target
+        android:name="group_body"
+        android:animation="@animator/body_shrink" />-->
+</animated-vector>
